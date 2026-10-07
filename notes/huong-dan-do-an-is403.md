@@ -148,7 +148,9 @@ Nhóm mới học đến Chương 2; điều này **không ngăn việc chọn �
 
 Theo nội dung giảng viên dặn qua ghi âm, nhóm nên hướng tới khoảng **8–10 phương pháp**, gồm một số phương pháp mới ngoài phần lý thuyết. Đây được ghi nhận là định hướng mạnh (“nên cố gắng/ước lượng”), không phải con số bắt buộc đã có trong đề cương văn bản. Mỗi phương pháp vẫn phải liên quan trực tiếp đến vấn đề hoặc câu hỏi con; không “nhét” thuật toán chỉ để đủ số lượng.
 
-## 7. Hướng đang khảo sát [Quyết định làm việc của người dùng, chưa phải đề tài cuối]
+## 7. Hướng từng khảo sát [Lịch sử, chưa phải đề tài cuối]
+
+> **Cập nhật:** Các ý về Online Retail II bên dưới là lịch sử khảo sát, không phải hướng đã chốt. Hiện đang khảo sát Olist cho câu hỏi dự báo lượng bán theo danh mục; cả dataset và paper đều chưa chốt. Hai loại đồ án người dùng xác nhận là lời thầy (paper đề xuất phương pháp mới / paper so sánh phương pháp có sẵn), mốc 8–10 phương pháp và ghi chú bạn học về cách bắt đầu được phân biệt tại [`luu-y-giang-vien-ve-do-an.md`](luu-y-giang-vien-ve-do-an.md).
 
 ### Retail giao dịch online
 
@@ -183,7 +185,7 @@ IS403/
 └─ IS403_CONTEXT.md        # Context bền vững giữa các chat
 ```
 
-## 9. Việc cần làm ngay [Đề xuất của Codex]
+## 9. Checklist cũ khi khảo sát Online Retail II [Đề xuất của Codex, không còn là việc cần làm ngay]
 
 1. Xác nhận lại với giảng viên mức bắt buộc của mục tiêu 8–10 phương pháp, nếu có cơ hội.
 2. Kiểm tra Online Retail II: nguồn, cột, đơn vị quan sát, đơn hủy, license và giới hạn dữ liệu.

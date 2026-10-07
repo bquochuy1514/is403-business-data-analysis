@@ -74,10 +74,10 @@
 
 ## Định hướng đồ án
 
-- Đã chốt hướng vấn đề kinh doanh trung tâm: dùng dữ liệu giao dịch retail online để hỗ trợ tăng doanh thu qua quyết định về khách hàng, sản phẩm, bán kèm và kế hoạch bán hàng. Chưa chốt tên đề tài chính thức, dataset cuối cùng, roadmap phương pháp hoặc paper.
+- Đang khảo sát hướng dự báo lượng bán theo danh mục từ dữ liệu giao dịch online retail; **Olist chỉ là dataset ứng viên**, chưa chốt tên đề tài, dataset cuối cùng, paper hay roadmap phương pháp. Các hướng retail rộng hơn và Online Retail II trong ghi chú cũ là lịch sử khảo sát, không phải quyết định hiện hành.
 - Khi chốt đề tài cần bảo đảm phù hợp ML/DM, có dataset, mô tả input/output và ứng dụng rõ ràng; quy trình báo cáo phải bao gồm xác định vấn đề, khảo sát nghiên cứu liên quan, chọn phương pháp, thực nghiệm/đánh giá và kết luận.
 - Hướng dẫn đầy đủ về mục tiêu, yêu cầu và quy trình đồ án: [`notes/huong-dan-do-an-is403.md`](notes/huong-dan-do-an-is403.md).
-- Lưu ý giảng viên qua ghi âm và lời dặn trên lớp: kỳ vọng 8–10 phương pháp cho đồ án hoàn chỉnh; báo cáo **giới thiệu** tối đa 5 slide, chuẩn bị trong 2 tuần, với nội dung khác nhau tùy bài báo có/không đề xuất phương pháp mới. Xem [`notes/luu-y-giang-vien-ve-do-an.md`](notes/luu-y-giang-vien-ve-do-an.md); các yêu cầu này được ghi riêng với phần Codex diễn giải.
+- Lưu ý giảng viên qua ghi âm, lời dặn trên lớp và ghi chú bạn học: mốc **8–10 phương pháp là thông tin mới**; **buổi 5** gửi slide giới thiệu tối đa 5 slide; source code và file báo cáo nộp trước buổi báo cáo 2 ngày (chưa rõ buổi nào). **Người dùng xác nhận hai loại đồ án thầy nói:** paper đề xuất phương pháp mới hoặc paper chỉ so sánh phương pháp có sẵn. Ghi chú bạn học còn có hai câu “đọc bài báo trước / tìm dataset trước rồi thực nghiệm”; gọi chúng là cách bắt đầu (paper-first/data-first) là **diễn giải của Codex**, chưa được xác nhận là cách thầy phân loại đồ án. Xem [`notes/luu-y-giang-vien-ve-do-an.md`](notes/luu-y-giang-vien-ve-do-an.md).
 - Ý tưởng từng cân nhắc: một ứng dụng ghi chú học phần bằng JavaScript/TypeScript; hiện **chưa quyết định triển khai**.
 
 ## Quy ước làm việc với Codex

@@ -54,20 +54,21 @@
 
 ## Bổ sung từ ghi chú của bạn học do người dùng chuyển lại
 
-> **Nguồn: bạn học ghi lại lời thầy, người dùng chuyển cho Codex.** Đây là lời dặn được thuật lại, chưa đối chiếu bản ghi âm hay thông báo chính thức. Người dùng đã xác nhận thông tin **6–8 phương pháp là cũ**, còn **8–10 phương pháp là lời dặn mới**; chỉ dùng mốc 8–10 cho kế hoạch hiện tại.
+> **Nguồn: bạn học ghi lại lời thầy, người dùng chuyển cho Codex.** Đây là lời dặn được thuật lại, chưa đối chiếu bản ghi âm hay thông báo chính thức. Người dùng đã xác nhận **8–10 phương pháp là lời dặn mới**; số lượng trong ghi chú cũ không còn áp dụng cho kế hoạch hiện tại.
 
 - Với **thuật toán đã học trên lớp**, khi báo cáo không cần trình bày lại toàn bộ lý thuyết; tập trung nêu **thông số/cách cài đặt đã dùng**. Ghi chú bạn học chưa nói rõ câu này áp dụng cho buổi giới thiệu hay báo cáo cuối, nên không tự mở rộng thành yêu cầu cho cả hai.
 - **Source code và file báo cáo** cần nộp **trước buổi báo cáo 2 ngày**. Ghi chú chưa nêu ngày cụ thể và chưa nói rõ đây là buổi báo cáo nào; cần đối chiếu lịch/thông báo của lớp.
 - **Buổi 5** gửi slide **giới thiệu đồ án**, tối đa **5 slide**. Mốc “buổi 5” bổ sung cho lời dặn trước đó về thời gian chuẩn bị 2 tuần; nếu lịch thực tế không khớp, hỏi lại thầy.
-- Thầy nêu hai **hướng bắt đầu đồ án**:
-    1. **Hướng 1 — đọc hiểu bài báo trước**, rồi chọn/thử các phương pháp phù hợp (bạn học ghi ví dụ “phương pháp D, E, F”; chưa rõ đây là tên thật hay ký hiệu minh họa).
-    2. **Hướng 2 — tìm bộ dữ liệu có sẵn trước**, rồi xác định bài toán và thực nghiệm trên dữ liệu đó.
-
-Hai hướng trên nói về **thứ tự xuất phát: paper-first hoặc data-first**. Chúng **không đồng nghĩa** với hai trường hợp thầy hướng dẫn trình bày ở trên (**paper đề xuất phương pháp mới** hoặc **paper chỉ so sánh phương pháp có sẵn**). Có thể bắt đầu từ dữ liệu rồi chọn một paper thuộc một trong hai trường hợp; chưa có lời dặn nào ở đây buộc mỗi hướng xuất phát tương ứng đúng một kiểu paper.
+- Ghi chú bạn học còn viết hai câu dưới nhãn “Hướng 1/2”: **“đọc hiểu bài báo (có thể làm phương pháp D, E, F)”** và **“tìm bộ dữ liệu có sẵn, sau đó thực nghiệm”**. Chưa rõ bạn học dùng chữ “hướng” để ghi lại cách thầy phân loại đồ án hay để tóm tắt trình tự làm việc.
+- **Người dùng xác nhận lại:** hai **loại đồ án thầy nói** là (1) làm theo paper **đề xuất phương pháp mới**, hoặc (2) làm theo paper **chỉ so sánh phương pháp có sẵn**, tương ứng hai mục hướng dẫn báo cáo giới thiệu ở trên.
 
 ## Diễn giải và checklist của Codex
 
 Các mục bên dưới là cách Codex chuyển lời dặn của giảng viên thành tiêu chí thực hiện; **không phải nguyên văn lời giảng viên**.
+
+Trước đây Codex gọi hai câu “đọc paper trước / tìm dataset trước” là **paper-first / data-first**, tức hai cách bắt đầu tìm đề tài. **Đó là diễn giải của Codex, không phải hai loại đồ án được người dùng xác nhận là lời thầy.** Không dùng cách diễn giải này để thay thế phân loại paper có phương pháp mới / paper so sánh phương pháp có sẵn.
+
+**Hai nghĩa khác nhau của “phương pháp mới”:** trong lời dặn về 8–10 phương pháp, “mới” có thể hiểu là **chưa học trên lớp, sinh viên phải tự tìm hiểu**; còn trong nhánh “paper đề xuất phương pháp mới”, “mới” là **phương pháp do tác giả bài báo đề xuất**. Vì vậy, chọn nhánh paper chỉ so sánh phương pháp có sẵn **không có nghĩa** đồ án được phép chỉ dùng các thuật toán đã học trên lớp. Đây là cách Codex phân biệt hai ngữ cảnh để tránh hiểu nhầm, cần hỏi lại thầy nếu tiêu chí chấm cụ thể chưa rõ.
 
 ### Phân biệt buổi giới thiệu và đồ án hoàn chỉnh
 
