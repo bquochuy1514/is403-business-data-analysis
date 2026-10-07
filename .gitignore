@@ -1,0 +1,5 @@
+# Course slide PDFs kept only on this machine
+/slides/
+
+# Dependencies if JavaScript/TypeScript tooling is added later
+/node_modules/

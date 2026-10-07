@@ -134,7 +134,7 @@ Một đề tài phù hợp cần thỏa cả bốn điều kiện:
 
 **Danh sách chương/phương pháp là [Slide/đề cương]. Cách áp dụng các chương vào đồ án là [Đề xuất của Codex].**
 
-Nhóm mới học đến Chương 2; điều này **không ngăn việc chọn đề tài bây giờ**. Có thể chọn dataset có tiềm năng dùng các phương pháp ở chương sau, rồi triển khai từng phần khi học.
+Có thể chọn dataset có tiềm năng dùng các phương pháp ở nhiều chương, rồi triển khai từng phần khi phù hợp với bài toán. Không cần áp dụng mọi chương vào cùng một đồ án.
 
 | Nội dung môn                     | Có thể đóng góp vào đồ án                                                                   |
 | -------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -150,7 +150,7 @@ Theo nội dung giảng viên dặn qua ghi âm, nhóm nên hướng tới kho�
 
 ## 7. Hướng từng khảo sát [Lịch sử, chưa phải đề tài cuối]
 
-> **Cập nhật:** Các ý về Online Retail II bên dưới là lịch sử khảo sát, không phải hướng đã chốt. Hiện đang khảo sát Olist cho câu hỏi dự báo lượng bán theo danh mục; cả dataset và paper đều chưa chốt. Hai loại đồ án người dùng xác nhận là lời thầy (paper đề xuất phương pháp mới / paper so sánh phương pháp có sẵn), mốc 8–10 phương pháp và ghi chú bạn học về cách bắt đầu được phân biệt tại [`luu-y-giang-vien-ve-do-an.md`](luu-y-giang-vien-ve-do-an.md).
+> **Cập nhật:** Các ý về Online Retail II và Olist bên dưới là lịch sử khảo sát, không phải hướng đã chốt. Đề tài hiện tại và mục tiêu cuối được ghi tại [`de-tai-du-doan-mua-hang.md`](de-tai-du-doan-mua-hang.md); **link dataset dùng khi đăng ký/giới thiệu là [bản Kaggle](https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)**, còn UCI là nguồn gốc bộ dữ liệu. Hai loại đồ án người dùng xác nhận là lời thầy (paper đề xuất phương pháp mới / paper so sánh phương pháp có sẵn), mốc 8–10 phương pháp và ghi chú bạn học về cách bắt đầu được phân biệt tại [`luu-y-giang-vien-ve-do-an.md`](luu-y-giang-vien-ve-do-an.md).
 
 ### Retail giao dịch online
 
@@ -167,7 +167,7 @@ Theo nội dung giảng viên dặn qua ghi âm, nhóm nên hướng tới kho�
 
 **Lộ trình phương pháp:** chưa chốt. Phải lập bản đồ khoảng 8–10 phương pháp, gồm phương pháp đã học và phương pháp mới; từng phương pháp cần có vai trò, cách đánh giá và lý do phù hợp với dữ liệu.
 
-Chỉ sau khi chốt dataset, vấn đề, roadmap và paper phù hợp mới đặt tên đề tài chính thức.
+Đây là lộ trình từng dự tính cho Online Retail II, không phải điều kiện đặt tên cho đề tài hiện tại.
 
 ## 8. Cấu trúc repo đề xuất [Đề xuất của Codex]
 
@@ -178,10 +178,12 @@ IS403/
 │  └─ processed/           # Dữ liệu sau xử lý
 ├─ notebooks/              # Jupyter/Colab notebooks theo từng bước
 ├─ src/                    # Mã nguồn dùng lại được
-├─ reports/                # Báo cáo PDF, biểu đồ xuất ra
-├─ slides/                 # Slide môn học và slide thuyết trình đồ án
-├─ notes/                  # Ghi chú môn học và hướng dẫn đồ án
+├─ reports/                # Báo cáo, biểu đồ và slide thuyết trình đồ án
+├─ slides/                 # PDF bài giảng giữ riêng trên máy, được Git bỏ qua
+├─ lecture-notes/          # Ghi chú tóm tắt nội dung từng chương học
+├─ notes/                  # Ghi chú đề tài, hướng dẫn đồ án, lời dặn của giảng viên
 ├─ README.md               # Cách cài đặt và chạy dự án
+├─ .gitignore              # Bỏ qua slides/ và node_modules/ nếu có
 └─ IS403_CONTEXT.md        # Context bền vững giữa các chat
 ```
 
