@@ -38,7 +38,7 @@ Các phương pháp mô tả/trực quan hóa, kiểm định và tiền xử l�
 
 ## Sau buổi giới thiệu [Tiến độ và đề xuất của Codex]
 
-Buổi giới thiệu 5 slide đã hoàn thành và đề tài được thầy duyệt. Thầy yêu cầu khảo sát kỹ 17 thuộc tính đầu vào. Người dùng suy đoán thầy có thể lo một số thuộc tính không liên quan hoặc không đúng; **đây là suy đoán của người dùng, không phải lý do thầy đã nêu**.
+Buổi giới thiệu 5 slide đã hoàn thành và đề tài được thầy duyệt. Thầy yêu cầu khảo sát kỹ 17 thuộc tính đầu vào. Đã có [bản khảo sát ban đầu](../reports/khao-sat-17-thuoc-tinh.md) dựa trên CSV gốc và mô tả của UCI; tài liệu này chưa chốt giữ/bỏ thuộc tính. Người dùng suy đoán thầy có thể lo một số thuộc tính không liên quan hoặc không đúng; **đây là suy đoán của người dùng, không phải lý do thầy đã nêu**.
 
 Việc tiếp theo: khảo sát từng thuộc tính; xác định thời điểm dự đoán để tránh dùng thông tin chưa có hoặc rò rỉ nhãn; sau đó chuẩn bị và chia dữ liệu, thử các phương pháp phù hợp trong cùng điều kiện, đánh giá bằng chỉ số phù hợp với dữ liệu mất cân bằng, giải thích khác biệt, giới hạn và đề xuất cải tiến; hoàn thiện source code, hướng dẫn chạy, báo cáo, slide cuối và demo.
 

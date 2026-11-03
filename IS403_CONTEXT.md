@@ -13,7 +13,7 @@
 3. Hồi quy: đơn biến, đa biến và phi tuyến. Ghi chú tóm tắt: [`lecture-notes/chuong-03-phan-tich-hoi-quy.md`](lecture-notes/chuong-03-phan-tich-hoi-quy.md).
 4. Hồi quy Logistic. Ghi chú tóm tắt: [`lecture-notes/chuong-04-hoi-quy-logistic.md`](lecture-notes/chuong-04-hoi-quy-logistic.md).
 5. Dự báo chuỗi thời gian: ARIMA, ARIMAX, SARIMA, SARIMAX. Ghi chú hiện có mới gồm phần [đơn biến/đa biến](lecture-notes/chuong-05-du-bao-chuoi-thoi-gian.md) từ bản chuyển giọng nói.
-6. Học máy và bài toán dự báo: cây quyết định, SVM, RNN/LSTM/GRU, Isolation Forest.
+6. Học máy và bài toán dự báo: cây quyết định, SVM, RNN/LSTM/GRU, Isolation Forest. Đã có [ghi chú Chương 6 Phần 1](lecture-notes/chuong-06-hoc-may-va-du-bao-phan-1.md) từ bản tóm tắt slide do người dùng cung cấp; phần này tập trung ML/DL cho chuỗi thời gian, SVM và SVR.
 7. Mô hình cấu trúc tuyến tính (SEM).
 
 ## Chương 0 — Giới thiệu môn học
@@ -96,4 +96,4 @@
 
 ## Trạng thái hiện tại
 
-Đã đọc đề cương môn học qua ảnh và lưu ghi chú tóm tắt Chương 1–4 từ nội dung người dùng cung cấp; Chương 4 dựa trên bản tóm tắt slide, chưa đối chiếu từng trang. Ghi chú Chương 5 mới có phần đơn biến/đa biến từ bản chuyển giọng nói, chưa phải tóm tắt cả chương. Link dataset trình giảng viên dùng Kaggle (xem trên); UCI được giữ làm thông tin nguồn gốc. **Buổi giới thiệu 5 slide đã hoàn thành và đề tài đã được thầy duyệt; nhóm có thể bắt đầu làm đồ án.** Ưu tiên tiếp theo là khảo sát kỹ 17 thuộc tính đầu vào theo lời thầy, rồi mới chốt cách dùng thuộc tính và thiết kế thực nghiệm. Đã ghi thêm lời thầy qua bản chuyển giọng nói về seminar, cấu trúc báo cáo và lịch dự kiến; chưa có template/link hoặc hạn nộp cuối được xác nhận. Chưa có thông tin xác nhận đã chạy mô hình hoặc có kết quả đánh giá.
+Đã đọc đề cương môn học qua ảnh và lưu ghi chú tóm tắt Chương 1–4 từ nội dung người dùng cung cấp; Chương 4 dựa trên bản tóm tắt slide, chưa đối chiếu từng trang. Ghi chú Chương 5 mới có phần đơn biến/đa biến từ bản chuyển giọng nói, chưa phải tóm tắt cả chương. Đã thêm ghi chú Chương 6 Phần 1 từ bản tóm tắt slide, chưa đối chiếu slide gốc. Link dataset trình giảng viên dùng Kaggle (xem trên); UCI được giữ làm thông tin nguồn gốc. **Buổi giới thiệu 5 slide đã hoàn thành và đề tài đã được thầy duyệt.** Đã chép bản CSV gốc vào `data/raw/` sau khi đối chiếu SHA-256 và bắt đầu khảo sát 17 thuộc tính tại [`reports/khao-sat-17-thuoc-tinh.md`](reports/khao-sat-17-thuoc-tinh.md); script chạy lại thống kê ở `src/audit_dataset.py`. Bản khảo sát chỉ là bước đầu, chưa chốt thuộc tính, thời điểm dự đoán, cách chia dữ liệu hay chỉ số đánh giá; chưa chạy mô hình. Đã ghi thêm lời thầy qua bản chuyển giọng nói về seminar, cấu trúc báo cáo và lịch dự kiến; chưa có template/link hoặc hạn nộp cuối được xác nhận.

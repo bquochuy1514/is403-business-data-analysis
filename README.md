@@ -13,7 +13,13 @@ Từ các thuộc tính mô tả một phiên truy cập website, dự đoán ph
 
 ## Tình trạng hiện tại
 
-Buổi giới thiệu 5 slide đã hoàn thành; thầy đã duyệt đề tài và yêu cầu **khảo sát kỹ 17 thuộc tính đầu vào** trước khi triển khai. Chưa có mã nguồn hoặc thực nghiệm trong repo. Các thư mục `data/`, `notebooks/`, `src/` và `reports/` trong [cấu trúc đề xuất](notes/huong-dan-do-an-is403.md) sẽ chỉ được tạo khi có nội dung thực tế.
+Buổi giới thiệu 5 slide đã hoàn thành; thầy đã duyệt đề tài và yêu cầu **khảo sát kỹ 17 thuộc tính đầu vào** trước khi triển khai. Repo đã có [bản CSV gốc](data/raw/online_shoppers_intention.csv), [bản khảo sát ban đầu](reports/khao-sat-17-thuoc-tinh.md) và script kiểm tra dữ liệu. **Chưa huấn luyện mô hình hoặc có kết quả thực nghiệm so sánh.** Các quyết định về thời điểm dự đoán, thuộc tính dùng và cách đánh giá vẫn cần chốt trước khi cả nhóm chạy mô hình.
+
+Chạy lại thống kê dữ liệu gốc (chỉ cần Python, không cần cài thêm thư viện):
+
+```powershell
+python src/audit_dataset.py
+```
 
 ## Tài liệu trong repo
 
@@ -21,7 +27,9 @@ Buổi giới thiệu 5 slide đã hoàn thành; thầy đã duyệt đề tài 
 - [`notes/de-tai-du-doan-mua-hang.md`](notes/de-tai-du-doan-mua-hang.md): mục tiêu đồ án, mức phù hợp với lời thầy và những điểm chưa chốt.
 - [`notes/luu-y-giang-vien-ve-do-an.md`](notes/luu-y-giang-vien-ve-do-an.md): lời dặn của giảng viên do người dùng cung cấp, tách khỏi phần diễn giải của Codex.
 - [`notes/huong-dan-do-an-is403.md`](notes/huong-dan-do-an-is403.md): hướng dẫn tổng quát và lịch sử các hướng từng khảo sát.
+- [`reports/khao-sat-17-thuoc-tinh.md`](reports/khao-sat-17-thuoc-tinh.md): ý nghĩa và thống kê ban đầu của 17 thuộc tính; chưa phải quyết định chọn thuộc tính.
+- [`src/audit_dataset.py`](src/audit_dataset.py): script kiểm tra dữ liệu gốc có thể chạy lại.
 - [`lecture-notes/`](lecture-notes/): bản tóm tắt các chương học.
 - `slides/`: PDF bài giảng giữ riêng trên máy, đã được `.gitignore` bỏ qua. Không giả định thư mục này có sẵn trên bản sao repo khác.
 
-`README.md` này giới thiệu repo hiện tại. Khi có source code để nộp, nhóm sẽ bổ sung hướng dẫn cài đặt/chạy cụ thể trong `README.txt` theo đề cương môn học.
+`README.md` này giới thiệu repo hiện tại. Khi hoàn thành quy trình mô hình hóa, nhóm sẽ bổ sung hướng dẫn cài đặt/chạy toàn bộ đồ án trong `README.txt` theo đề cương môn học.
