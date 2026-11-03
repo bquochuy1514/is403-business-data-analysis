@@ -1,6 +1,6 @@
 # IS403 — Phân tích dữ liệu kinh doanh
 
-Repo lưu ghi chú môn học và chuẩn bị đồ án. **Đề tài đang được nhóm chọn để đăng ký, chưa được giảng viên duyệt:**
+Repo lưu ghi chú môn học và chuẩn bị đồ án. **Đề tài đã được giảng viên duyệt sau buổi giới thiệu 5 slide:**
 
 > Dự đoán khả năng mua hàng từ dữ liệu phiên truy cập website thương mại điện tử: Đánh giá thực nghiệm các mô hình phân loại
 
@@ -13,7 +13,7 @@ Từ các thuộc tính mô tả một phiên truy cập website, dự đoán ph
 
 ## Tình trạng hiện tại
 
-Ưu tiên trước mắt là thống nhất đề tài với nhóm, điền tên đề tài cùng link paper/dataset vào sheet cho giảng viên kiểm tra, rồi chuẩn bị phần giới thiệu **tối đa 5 slide**. Chưa có mã nguồn hoặc thực nghiệm trong repo. Các thư mục `data/`, `notebooks/`, `src/` và `reports/` trong [cấu trúc đề xuất](notes/huong-dan-do-an-is403.md) sẽ chỉ được tạo khi có nội dung thực tế.
+Buổi giới thiệu 5 slide đã hoàn thành; thầy đã duyệt đề tài và yêu cầu **khảo sát kỹ 17 thuộc tính đầu vào** trước khi triển khai. Chưa có mã nguồn hoặc thực nghiệm trong repo. Các thư mục `data/`, `notebooks/`, `src/` và `reports/` trong [cấu trúc đề xuất](notes/huong-dan-do-an-is403.md) sẽ chỉ được tạo khi có nội dung thực tế.
 
 ## Tài liệu trong repo
 

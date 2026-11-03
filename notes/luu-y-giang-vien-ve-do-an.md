@@ -4,7 +4,56 @@
 
 - Nguồn thứ nhất: nội dung người dùng cung cấp, được trích xuất từ bản ghi âm lời dặn của giảng viên.
 - Nguồn thứ hai: lời giảng viên trong buổi học mới, do người dùng thuật lại. Phần này được ghi riêng bên dưới, không phải đề xuất của Codex.
+- Nguồn thứ ba: người dùng chuyển bản văn bản được tạo từ các đoạn ghi âm buổi học tiếp theo. Hai tệp đính kèm được gửi lần này có nội dung giống hệt nhau. Các mục **“Ghi âm bổ sung”** bên dưới ghi lại ý trong bản chuyển giọng nói/tóm tắt, không phải bản chép nguyên văn từng câu của thầy.
 - Đây là yêu cầu/định hướng được nghe từ lớp, **không thay thế đề cương môn học bằng văn bản**. Khi có điểm mâu thuẫn hoặc chưa rõ, cần hỏi lại giảng viên.
+
+## Cập nhật sau buổi giới thiệu đồ án [Người dùng thuật lại]
+
+- Nhóm đã hoàn thành buổi giới thiệu 5 slide; **giảng viên đã duyệt đề tài** dự đoán khả năng mua hàng từ phiên truy cập website và nhóm có thể bắt đầu thực hiện.
+- Giảng viên yêu cầu **khảo sát kỹ 17 thuộc tính đầu vào** của dataset trước khi làm. Người dùng suy đoán thầy có thể lo về mức liên quan hoặc tính đúng đắn của một số thuộc tính; đây **không phải lý do do giảng viên nêu**.
+
+## Ghi âm bổ sung: góp ý đề tài của các nhóm khác [Lời thầy qua bản chuyển giọng nói/tóm tắt]
+
+> Đây là góp ý cho **từng nhóm được nêu**, không tự động trở thành yêu cầu về dataset hoặc mô hình của nhóm dự đoán mua hàng.
+
+- **Nhóm dự báo giá cổ phiếu:** mục tiêu là dự báo giá đóng cửa hằng ngày. Thầy gợi ý có thể đối chiếu bộ dữ liệu trong paper với dữ liệu giá mới thu thập; cần làm rõ các biến đầu vào (giá mở/đóng/cao/thấp, khối lượng và các chỉ số tự tính như RSI, MACD, MA). Các phương pháp được nêu gồm ARIMA, Ridge Regression, LightGBM, LSTM, Transformer và tổ hợp bằng trung bình có trọng số; nếu dùng cách tổ hợp này phải hiểu công thức và cách xác định trọng số.
+- **Nhóm 3 — hành vi tiêu dùng siêu thị:** dữ liệu được giới thiệu khoảng 1,2 triệu dòng, 12 thuộc tính, với đầu ra dự kiến là quy mô giỏ hàng và chỉ số tiêu dùng. Nhóm nêu Apriori (luật kết hợp), K-Means (phân cụm), lọc cộng tác (gợi ý) và ARIMA (chuỗi thời gian). Thầy nhận xét như vậy ôm nhiều bài toán độc lập, khối lượng nặng và thiên về Khai phá dữ liệu; gợi ý tập trung hơn vào bài toán chuỗi thời gian nếu tiếp tục, còn làm tất cả thì phải hiểu rõ từng thuật toán.
+- **Nhóm 4 — dự đoán khách hàng rời bỏ dịch vụ:** đây là bài toán phân lớp hai nhãn; nhóm trình bày dataset khoảng 12,5 GB, khoảng 22.000 khách hàng và mô hình lai LSTM–GRU–LightGBM/ensemble. Thầy nhắc kiểm tra tỷ lệ hai nhãn; kết quả thực nghiệm thấp hơn paper có thể bình thường nếu dữ liệu khác, còn cao hơn bất thường thì nên rà soát phương pháp.
+- **Nhóm 5 — dự báo lượng hàng qua cảng:** mục tiêu là dự báo tổng tấn hàng của từng cảng trong 7 ngày tiếp theo, từ dữ liệu theo địa điểm kể từ năm 2019. Thầy yêu cầu thống kê rõ số dòng dữ liệu của từng cảng để đánh giá độ tin cậy của bài toán chuỗi thời gian.
+
+## Ghi âm bổ sung: bài giảng về dự báo chuỗi thời gian [Lời thầy qua bản chuyển giọng nói/tóm tắt]
+
+- **Đơn biến:** dự báo biến mục tiêu từ lịch sử của chính biến đó, ví dụ dùng mức tiêu thụ điện các ngày trước để dự báo ngày tiếp theo.
+- **Đa biến:** dùng lịch sử biến mục tiêu cùng các chuỗi biến phụ trợ tương ứng về thời gian, ví dụ thêm nhiệt độ/độ ẩm khi dự báo điện năng, hoặc giá mở/cao/thấp và khối lượng khi dự báo giá cổ phiếu.
+- Theo bản tóm tắt, thầy nhận xét mô hình đa biến *có thể* tận dụng thêm thông tin bối cảnh và nhắc các nhóm phải nói rõ đang chạy đơn biến, đa biến hay đối sánh cả hai; nếu dùng đa biến, cần chỉ ra cụ thể các biến phụ trợ.
+
+**Lưu ý phương pháp của Codex:** nội dung này nói về **dự báo chuỗi thời gian**. Không gọi bài toán phân loại từng phiên truy cập website của nhóm mình là “chuỗi thời gian đa biến” chỉ vì có nhiều thuộc tính đầu vào. Thêm biến cũng không bảo đảm kết quả luôn tốt hơn.
+
+## Ghi âm bổ sung: tiến độ, seminar và báo cáo cuối [Lời thầy qua bản chuyển giọng nói/tóm tắt]
+
+### Tiến độ và mẫu báo cáo
+
+- Các nhóm **dự kiến** báo cáo vào tuần 10–11; bản tóm tắt nói có thêm khoảng 2 tuần để tổng hợp và viết báo cáo. Thầy đang xem xét cân đối lại hạn nộp, nên đây **chưa phải lịch/hạn nộp đã chốt**.
+- Thầy dự định cung cấp đường dẫn mẫu báo cáo trên Overleaf, kèm lựa chọn tải mẫu Word hoặc LaTeX. Tài liệu người dùng gửi **chưa có đường dẫn mẫu**.
+
+### Seminar trước lớp
+
+- Mỗi nhóm có khoảng **15 phút trình bày** và **5–10 phút trả lời phản biện** (khoảng 20–25 phút tổng cộng).
+- Với **mô hình đã học trên lớp**, tập trung vào tham số và cách cài đặt thực tế, không lặp lại toàn bộ lý thuyết cơ bản.
+- Với **mô hình mới/tự tìm hiểu thêm** (ví dụ thầy nêu LightGBM, Random Forest), cần trình bày thêm lý thuyết tổng quan và cơ chế hoạt động vì thầy có thể hỏi sâu.
+- Với **SVM/SVR**, bản tóm tắt nhắc tham số `C`, loại kernel, `epsilon`, hàm dự báo/phân loại và trọng số `w`, độ lệch `b`; khi nhiều biến khó vẽ trực quan, thầy muốn trình bày hàm và các trọng số thay cho đồ thị.
+- Với **ARIMA**, nêu cụ thể `(p, d, q)` và cách tìm (ví dụ `auto_arima` hay dò thủ công).
+- Với **RNN/LSTM/CNN**, trình bày kiến trúc: số lớp, số unit/neuron, hàm kích hoạt và cách nối các tầng; bản tóm tắt nói không cần trình bày chi tiết công thức tích chập hoặc các cổng LSTM.
+
+**Lưu ý phương pháp của Codex:** bản tóm tắt gộp SVM phân loại với SVR hồi quy. `epsilon` là tham số thường gắn với **SVR**, không được tự ghi là tham số bắt buộc cho mọi SVM phân loại. Với kernel phi tuyến cũng không nên hứa luôn có thể in một phương trình tuyến tính theo các thuộc tính gốc cùng bộ trọng số `w` dễ đọc; cần đối chiếu yêu cầu cụ thể của thầy khi nhóm thực sự chọn cấu hình SVM.
+
+### Khung bài báo cáo hoàn chỉnh
+
+- Báo cáo theo dạng bài báo khoa học, độ dài **khoảng 12–15 trang**, có thể viết bằng Word hoặc LaTeX. **Tiếng Việt được phép**; tiếng Anh được khuyến khích nếu nhóm có khả năng.
+- Các mục được bản tóm tắt liệt kê: **Tóm tắt** (bối cảnh, phương pháp, kết quả chính); **Giới thiệu** (bài toán, input/output, bối cảnh, lý do, thách thức, hướng giải quyết); **Nghiên cứu liên quan** (công trình và thuật toán trước đây); **Phương pháp** (mô hình nhóm triển khai); **Thực nghiệm và đánh giá** (chỉ số, bảng/biểu đồ, phân tích vì sao kết quả khác nhau); **Kết luận và hướng phát triển** (kết quả đạt được và cải tiến).
+- Ví dụ chỉ số được thầy nêu trong bản tóm tắt: **Accuracy, Precision, Recall, F1** cho phân loại; **RMSE, MAE, R²** cho dự báo giá trị số. Chỉ số lạ hoặc chưa học trên lớp thì cần giải thích ý nghĩa.
+
+**Lưu ý về bản tóm tắt:** phần này nói “5 phần chính” nhưng thực tế liệt kê **6 mục nếu tính cả Tóm tắt**. Giữ đủ các mục đã nêu; khi có template chính thức thì theo template. Thông tin cũ về việc nộp code và báo cáo trước buổi báo cáo 2 ngày nằm trong **ghi chú bạn học**, còn hạn nộp mới vẫn đang được thầy xem xét; không tự coi các mốc này đã được thay thế hay chốt lại.
 
 ## Nội dung người dùng trích xuất từ ghi âm lời giảng viên
 

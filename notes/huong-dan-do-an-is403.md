@@ -8,6 +8,7 @@ Tài liệu này giải thích đồ án môn IS403 cần làm gì, theo cách �
 
 - **[Slide/đề cương]**: thông tin xuất hiện trong ảnh đề cương hoặc slide giới thiệu môn mà người dùng đã cung cấp.
 - **[Người dùng nghe trên lớp - chưa xác minh]**: thông tin người dùng thuật lại; cần hỏi lại giảng viên nếu ảnh hưởng đến phạm vi hoặc yêu cầu nộp bài.
+- **[Ghi âm do người dùng chuyển]**: ý được người dùng cung cấp từ bản chuyển giọng nói/tóm tắt ghi âm lời thầy; phân biệt với đề cương bằng văn bản và với ví dụ chỉ áp dụng cho nhóm khác.
 - **[Đề xuất của Codex]**: gợi ý, diễn giải, ví dụ hoặc kế hoạch do Codex đưa ra; không phải yêu cầu chính thức của môn.
 
 > **Lưu ý:** danh sách website lấy dữ liệu hiện chỉ thuộc nhóm “người dùng nghe trên lớp - chưa xác minh”; chưa có văn bản xác nhận trong thư mục dự án.
@@ -51,6 +52,15 @@ Khi đăng ký hoặc giới thiệu đề tài, nhóm cần mô tả:
     - khó khăn, đề xuất và giải pháp.
 - **Thuyết trình và demo:** khoảng 15 phút.
 - Nếu dùng thư viện, package hoặc source code có sẵn, phải khai báo trong báo cáo và slide.
+
+### Bổ sung cho seminar và bài báo cáo cuối [Ghi âm do người dùng chuyển]
+
+- **Seminar:** khoảng 15 phút trình bày và 5–10 phút trả lời câu hỏi. Với mô hình đã học trên lớp, tập trung trình bày tham số/cách cài đặt; với mô hình nhóm tự tìm hiểu thêm, cần nêu lý thuyết tổng quan và cơ chế hoạt động. Chi tiết theo từng họ mô hình được lưu ở [`luu-y-giang-vien-ve-do-an.md`](luu-y-giang-vien-ve-do-an.md).
+- **Bài báo cáo:** dạng bài báo khoa học, khoảng 12–15 trang; có các mục Tóm tắt, Giới thiệu, Nghiên cứu liên quan, Phương pháp, Thực nghiệm và đánh giá, Kết luận và hướng phát triển. Phần thực nghiệm cần nêu chỉ số, bảng/biểu đồ kết quả và giải thích nguyên nhân khác biệt giữa các mô hình.
+- **Ngôn ngữ và mẫu:** có thể viết bằng tiếng Việt; tiếng Anh được khuyến khích nếu làm được. Thầy dự định cung cấp mẫu Overleaf kèm lựa chọn Word/LaTeX; chưa có link mẫu trong thông tin người dùng gửi.
+- **Thời gian:** báo cáo dự kiến vào tuần 10–11; thầy đang cân đối lại hạn nộp. Không dùng thông tin dự kiến này như lịch chốt.
+
+Các ý trên xuất phát từ bản chuyển giọng nói/tóm tắt ghi âm, không thay thế yêu cầu nộp bài trong đề cương hoặc thông báo lịch chính thức. Phần tóm tắt nói “5 phần” nhưng liệt kê 6 mục nếu tính cả Tóm tắt; khi nhận mẫu của thầy, theo cấu trúc trong mẫu.
 
 ### Tiêu chí đánh giá đã biết
 
