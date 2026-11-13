@@ -179,7 +179,9 @@ Theo nội dung giảng viên dặn qua ghi âm, nhóm nên hướng tới kho�
 
 Đây là lộ trình từng dự tính cho Online Retail II, không phải điều kiện đặt tên cho đề tài hiện tại.
 
-## 8. Cấu trúc repo đề xuất [Đề xuất của Codex]
+## 8. Cấu trúc repo từng được đề xuất [Đề xuất cũ của Codex, không phải cấu trúc hiện tại]
+
+Sơ đồ dưới đây là đề xuất cũ. Theo lựa chọn hiện tại của người dùng, `src/` đã bị xóa; nhóm đang làm code trong notebook Colab trên Google Drive nhóm. Notebook chuẩn bị dữ liệu và hai CSV đã xử lý đã có trên Drive nhưng chưa được chép vào repo; chưa chốt có lưu bản sao trong repo hay không.
 
 ```text
 IS403/

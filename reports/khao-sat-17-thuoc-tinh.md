@@ -2,9 +2,9 @@
 
 ## Phạm vi và nguồn
 
-- **Yêu cầu từ thầy:** khảo sát kỹ 17 thuộc tính đầu vào trước khi triển khai mô hình. Đây là bản khảo sát **ban đầu**, chưa phải quyết định giữ hoặc bỏ thuộc tính.
+- **Yêu cầu từ thầy:** khảo sát kỹ 17 thuộc tính đầu vào trước khi triển khai mô hình. Đây là bản khảo sát **ban đầu**; quyết định cho thí nghiệm chính được ghi riêng tại [`quy-uoc-thuc-nghiem-chung.md`](quy-uoc-thuc-nghiem-chung.md).
 - **Nguồn ý nghĩa thuộc tính:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset). Bản CSV được chép từ file người dùng đã tải trước đây; SHA-256 `B3055EE355F59134D851D32641183CB4A8B45DEF7124D2F50442A042F358E0D9`, khớp mã đã ghi trong [`IS403_CONTEXT.md`](../IS403_CONTEXT.md). Bản gốc trong repo: [`data/raw/online_shoppers_intention.csv`](../data/raw/online_shoppers_intention.csv).
-- **Cách kiểm tra thống kê:** chạy `python src/audit_dataset.py` ở thư mục gốc repo; script chỉ đọc CSV và không sửa dữ liệu.
+- **Cách kiểm tra thống kê:** các số dưới đây là kết quả khảo sát trực tiếp trên CSV gốc. Notebook Colab chung đã đối chiếu số dòng/cột, tỷ lệ nhãn, ô trống và dòng trùng; hiện không có script kiểm tra riêng trong repo.
 - **Đơn vị quan sát:** một phiên truy cập website. Có **12.330 phiên**, **17 thuộc tính đầu vào** và một cột nhãn `Revenue`.
 
 ## Kiểm tra tổng quát trên CSV
@@ -32,7 +32,7 @@
 | `ProductRelated_Duration` | Tổng thời gian ở nhóm trang sản phẩm.                                                                                                  | Từ 0 đến 63.973,52223; trung vị khoảng 598,94.                  | Giá trị lớn và đơn vị thời gian cần xem kỹ.                                                |
 | `BounceRates`             | Chỉ số từ Google Analytics về tỷ lệ vào một trang rồi rời đi mà không có tương tác tiếp.                                               | Từ 0 đến 0,2; 5.518 phiên bằng 0.                               | UCI mô tả ý nghĩa ở mức trang; cách quy về một giá trị cho phiên chưa được giải thích rõ.  |
 | `ExitRates`               | Chỉ số về tỷ lệ một trang là trang cuối trước khi rời website.                                                                         | Từ 0 đến 0,2; trung vị khoảng 0,025.                            | Cần hiểu cách tổng hợp ở mức phiên và thời điểm biết giá trị.                              |
-| `PageValues`              | Giá trị trung bình gắn với các trang đã được xem trước giao dịch theo mô tả của UCI; **không phải số tiền khách chi trong phiên này**. | Từ 0 đến 361,7637419; 9.600 phiên bằng 0.                       | **Ưu tiên kiểm tra** cách tính và tính sẵn có trước khi dự đoán; không vội giữ hoặc bỏ.    |
+| `PageValues`              | Giá trị trung bình gắn với các trang đã được xem trước giao dịch theo mô tả của UCI; **không phải số tiền khách chi trong phiên này**. | Từ 0 đến 361,7637419; 9.600 phiên bằng 0.                       | Chưa rõ cách tính/thời điểm có giá trị; không dùng trong so sánh chính.                     |
 | `SpecialDay`              | Mức độ gần một ngày đặc biệt có thể ảnh hưởng hành vi mua.                                                                             | Sáu mức từ 0 đến 1; 11.079 phiên bằng 0.                        | Xem cách mã hóa mức độ gần ngày đặc biệt.                                                  |
 | `Month`                   | Tháng diễn ra phiên truy cập.                                                                                                          | 10 giá trị khác nhau; nhiều nhất là `May` và `Nov`.             | Là loại dữ liệu phân nhóm, không phải số liên tục.                                         |
 | `OperatingSystems`        | Mã loại hệ điều hành.                                                                                                                  | 8 mã số khác nhau.                                              | Các mã là **nhãn nhóm**, không có thứ bậc số học; chưa có bảng tên hệ điều hành tương ứng. |
@@ -48,7 +48,7 @@
 
 `Revenue` có hai giá trị: `TRUE` nếu phiên kết thúc bằng mua hàng, `FALSE` nếu không. Đây là **nhãn cần dự đoán** trong đề tài nhóm đã được duyệt, không phải một trong 17 đầu vào và không phải số tiền doanh thu.
 
-Nhóm không mua chiếm khoảng 84,53%. Vì vậy, một mô hình luôn nói “không mua” cũng có thể có tỷ lệ đúng chung khoảng 84,53% nhưng không nhận ra phiên mua nào. Khi đánh giá, cần nhìn thêm khả năng nhận ra lớp mua hàng; chưa chốt bộ chỉ số cuối cùng.
+Nhóm không mua chiếm khoảng 84,53%. Vì vậy, một mô hình luôn nói “không mua” cũng có thể có tỷ lệ đúng chung khoảng 84,53% nhưng không nhận ra phiên mua nào. Khi đánh giá, cần nhìn thêm khả năng nhận ra lớp mua hàng; nhóm đã chọn Accuracy, Precision, Recall và F1 làm bộ chỉ số chung cho lần so sánh chính.
 
 ## Một vài liên hệ mô tả với nhãn — chưa phải kết luận nguyên nhân
 
@@ -57,12 +57,12 @@ Nhóm không mua chiếm khoảng 84,53%. Vì vậy, một mô hình luôn nói 
 - Với `PageValues = 0`, **370/9.600** phiên mua (3,85%). Với `PageValues > 0`, **1.538/2.730** phiên mua (56,34%). Đây là chênh lệch rất lớn, nhưng **chưa đủ để kết luận** cột này an toàn cho mọi thời điểm dự đoán.
 - `New_Visitor` có **422/1.694** phiên mua (24,91%); `Returning_Visitor` có **1.470/10.551** (13,93%). Các tỷ lệ này mô tả dataset, không chứng minh loại khách gây ra việc mua.
 
-## Các quyết định còn mở trước khi giao dữ liệu chung cho người làm mô hình
+## Quyết định cho thí nghiệm chính sau khảo sát ban đầu
 
-1. **Dự đoán vào thời điểm nào?** Nếu dự đoán khi khách còn đang truy cập, nhóm chỉ được dùng những thông tin đã có lúc đó. CSV là bản tổng hợp theo phiên nên chưa tự chứng minh mọi giá trị đầu vào có sẵn trước khi kết quả mua hàng xảy ra.
-2. **Xử lý `PageValues` thế nào?** UCI mô tả nó qua giá trị trang liên quan đến giao dịch. Cần xác minh cách tính và thời điểm có giá trị. Có thể xem xét đối chiếu kết quả **có/không có cột này**, nhưng đó mới là đề xuất thực nghiệm, chưa phải quyết định.
-3. **Các mã phân nhóm xử lý ra sao?** `OperatingSystems`, `Browser`, `Region`, `TrafficType` được viết bằng số nhưng là mã nhóm; không nên mặc nhiên coi `4` lớn gấp đôi `2`.
-4. **125 dòng trùng xử lý ra sao?** Cần quyết định và ghi lý do; không tự động xóa vì thiếu mã định danh phiên.
-5. **Thống nhất cách chia dữ liệu và chỉ số** trước khi sáu người chạy mô hình, để kết quả có thể so sánh.
+1. Làm **phân loại offline trên các bản ghi phiên đã được tổng hợp**; không tuyên bố dự đoán khi khách còn đang truy cập. CSV không chứa ảnh chụp từng thời điểm trong phiên.
+2. Dùng **16 thuộc tính**, **không dùng `PageValues`** trong so sánh chính vì chưa rõ cách tính và thời điểm có giá trị. Đây là lựa chọn thận trọng, không phải kết luận cột này chắc chắn rò rỉ nhãn.
+3. Xử lý các mã `OperatingSystems`, `Browser`, `Region`, `TrafficType` như **nhóm phân loại**, không như số đo liên tục.
+4. Giữ nguyên 125 dòng trùng; khi chia dữ liệu, đặt các dòng có cùng 16 thuộc tính đầu vào vào cùng một phía để không lặp bản ghi giống nhau giữa phần học và phần kiểm tra.
+5. Dùng một cách chia và một bộ chỉ số chung cho mọi mô hình; xem các quyết định cần triển khai tại [`quy-uoc-thuc-nghiem-chung.md`](quy-uoc-thuc-nghiem-chung.md).
 
-Tài liệu này là **bản khảo sát đầu tiên**. Chưa huấn luyện mô hình và chưa kết luận thuộc tính nào tốt nhất, có tác động nhân quả, hoặc chắc chắn phải loại bỏ.
+Tài liệu này ghi khảo sát 17 thuộc tính và quyết định đầu vào cho so sánh chính. Notebook chung đã thực hiện cách chia/chuẩn bị dữ liệu, nhưng chưa huấn luyện tám mô hình; chưa kết luận thuộc tính nào tốt nhất, có tác động nhân quả, hoặc mô hình có thể dùng theo thời gian thực.
